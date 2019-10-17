@@ -1,0 +1,188 @@
+{
+  "lageplan": "String",
+  "wings": {
+    "2899698014509449925-1910151454": {
+      "o": "EB",
+      "initialDeparture": 1571309640000,
+      "departure": {
+        "scheduledTime": 1571309640000,
+        "time": 1571309640000,
+        "platform": "6",
+        "scheduledPlatform": "6",
+        "hidden": false,
+        "cancelled": false,
+        "delay": 0
+      },
+      "productClass": "D",
+      "currentStation": {
+        "title": "Leipzig Hbf",
+        "id": "8010205"
+      },
+      "scheduledDestination": "Hof Hbf",
+      "lineNumber": "13",
+      "id": "4181733059627315680",
+      "rawId": "4181733059627315680-1910171254-1",
+      "mediumId": "4181733059627315680-1910171254",
+      "substitute": false,
+      "train": {
+        "longDistance": false,
+        "name": "EB 13",
+        "number": "81019",
+        "trainCategory": "EB",
+        "thirdParty": "EB",
+        "type": "RB",
+        "line": "13"
+      },
+      "messages": {
+        "delay": [],
+        "qos": []
+      },
+      "cancelled": false,
+      "route": [
+        {
+          "name": "Leipzig Hbf",
+          "cancelled": false
+        },
+        {
+          "name": "Leipzig-Plagwitz",
+          "showVia": true
+        },
+        {
+          "name": "Leipzig-Knauthain",
+          "showVia": true
+        },
+        {
+          "name": "Zwenkau-Großdalzig"
+        },
+        {
+          "name": "Pegau"
+        },
+        {
+          "name": "Profen"
+        },
+        {
+          "name": "Zeitz"
+        },
+        {
+          "name": "Wetterzeube"
+        },
+        {
+          "name": "Crossen Ort"
+        },
+        {
+          "name": "Bad Köstritz"
+        },
+        {
+          "name": "Gera-Langenberg"
+        },
+        {
+          "name": "Gera Hbf",
+          "showVia": true
+        },
+        {
+          "name": "Gera Süd"
+        },
+        {
+          "name": "Gera-Zwötzen"
+        },
+        {
+          "name": "Weida"
+        },
+        {
+          "name": "Weida Mitte"
+        },
+        {
+          "name": "Weida Altstadt"
+        },
+        {
+          "name": "Loitsch-Hohenleuben"
+        },
+        {
+          "name": "Hohenleuben"
+        },
+        {
+          "name": "Triebes"
+        },
+        {
+          "name": "Zeulenroda unt Bf"
+        },
+        {
+          "name": "Mehltheuer"
+        },
+        {
+          "name": "Schönberg (Vogtl)"
+        },
+        {
+          "name": "Feilitzsch"
+        },
+        {
+          "name": "Hof Hbf"
+        }
+      ],
+      "destination": "Hof Hbf",
+      "platform": "6",
+      "scheduledPlatform": "6",
+      "auslastung": false,
+      "reihung": false,
+      "hiddenReihung": true
+    }
+  },
+  "departures": [
+    {
+      "o": "800486",
+      "initialDeparture": 1571138040000,
+      "arrival": {
+        "scheduledTime": 1571139480000,
+        "time": 1571140020000,
+        "platform": "1",
+        "scheduledPlatform": "1",
+        "hidden": false,
+        "cancelled": false,
+        "delay": 9
+      },
+      "departure": {
+        "scheduledTime": 1571139540000,
+        "time": 1571140080000,
+        "platform": "1",
+        "scheduledPlatform": "1",
+        "hidden": false,
+        "cancelled": false,
+        "delay": 9
+      },
+      "productClass": "S",
+      "currentStation": {
+        "title": "Leipzig Hbf  (tief)",
+        "id": "8098205"
+      },
+      "scheduledDestination": "Zwickau (Sachs) Hbf",
+      "lineNumber": "5X",
+      "id": "1543112199667643943",
+      "rawId": "1543112199667643943-1910151314-4",
+      "mediumId": "1543112199667643943-1910151314",
+      "substitute": false,
+      "train": {
+        "longDistance": false,
+        "name": "S 5X",
+        "number": "37519",
+        "trainCategory": "S",
+        "type": "S",
+        "line": "5X"
+      },
+      "messages": {
+        "delay": [
+        ],
+        "qos": [
+        ]
+      },
+      "cancelled": false,
+      "route": [],
+      "destination": "Zwickau (Sachs) Hbf",
+      "platform": "1",
+      "scheduledPlatform": "1",
+      "auslastung": false,
+      "reihung": false,
+      "hiddenReihung": false
+    }
+  ],
+  "lookbehind": []
+}

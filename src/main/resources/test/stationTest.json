@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Leipzig Hbf",
+    "id": "8098205",
+    "favendoId": 3631
+  },
+  {
+    "id": "008010205",
+    "title": "Leipzig Hbf",
+    "coordinates": {
+      "lng": 12.381167,
+      "lat": 51.345081
+    },
+    "products": [
+      {
+        "name": "ICE"
+      },
+      {
+        "name": "Bus 6",
+        "line": "6"
+      },
+      {
+        "name": "S"
+      },
+      {
+        "name": "S 1",
+        "line": "1"
+      }
+    ]
+  },
+  {
+    "title": "Leipzig Anger-Crottendorf",
+    "favendoId": 146,
+    "id": "8010008",
+    "DS100": "LACF"
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "o": "800486",
+  "initialDeparture": 1571138040000,
+  "arrival": {
+    "scheduledTime": 1571139480000,
+    "time": 1571140020000,
+    "platform": "1",
+    "scheduledPlatform": "1",
+    "hidden": false,
+    "cancelled": false,
+    "delay": 9
+  },
+  "departure": {
+    "scheduledTime": 1571139540000,
+    "time": 1571140080000,
+    "platform": "1",
+    "scheduledPlatform": "1",
+    "hidden": false,
+    "cancelled": false,
+    "delay": 9
+  },
+  "productClass": "S",
+  "currentStation": {
+    "title": "Leipzig Hbf  (tief)",
+    "id": "8098205"
+  },
+  "scheduledDestination": "Zwickau (Sachs) Hbf",
+  "lineNumber": "5X",
+  "id": "1543112199667643943",
+  "rawId": "1543112199667643943-1910151314-4",
+  "mediumId": "1543112199667643943-1910151314",
+  "substitute": false,
+  "train": {
+    "longDistance": false,
+    "name": "S 5X",
+    "number": "37519",
+    "trainCategory": "S",
+    "type": "S",
+    "line": "5X"
+  },
+  "messages": {
+    "delay": [
+    ],
+    "qos": [
+    ]
+  },
+  "cancelled": false,
+  "route": [],
+  "destination": "Zwickau (Sachs) Hbf",
+  "platform": "1",
+  "scheduledPlatform": "1",
+  "auslastung": false,
+  "reihung": false,
+  "hiddenReihung": false
+}
