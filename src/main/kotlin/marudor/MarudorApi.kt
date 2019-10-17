@@ -32,7 +32,7 @@ object MarudorApi : AbstractRestApi(){
     }
 
 
-    fun getDeparture(evalId : String, type: String = "default", lookahead: Int = 120, lookbehind : Int = 0): DeparturesInfo? {
+    fun getDeparturesInfo(evalId : String, type: String = "default", lookahead: Int = 120, lookbehind : Int = 0): DeparturesInfo? {
         var result: DeparturesInfo? = null
         val baseUrl = V1 + irisDeparturePoint + URLEncoder.encode(evalId, "UTF-8")
         val parameter = "type=" + type + "&lookahead=" + lookahead + "&lookbehind=" + lookbehind
