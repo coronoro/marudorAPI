@@ -35,7 +35,7 @@ internal class MarudorApiTest {
 
     @org.junit.jupiter.api.Test
     fun getDeparture() {
-        val departure = MarudorApi.getDeparture("8098205")
+        val departure = MarudorApi.getDeparturesInfo("8098205")
         assertNotNull(departure)
 
 
