@@ -7,7 +7,7 @@ data class Station (
     val id : String,
     var favendoId : Int? = null,
     var DS100: String? = null,
-    var coordinate : Coordinate? = null,
+    var coordinates : Coordinate? = null,
     var products : List<Product> = emptyList()
 
 )

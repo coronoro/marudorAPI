@@ -18,7 +18,7 @@ internal class MarudorApiTest {
         val stations = MarudorApi.findStation("Leipzig", StationType.DBNavigator)
         stations.forEach {
             println(it)
-            assertNotNull(it.coordinate)
+            assertNotNull(it.coordinates)
         }
         assertEquals(6, stations.size)
     }
