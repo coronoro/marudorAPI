@@ -3,7 +3,7 @@ package marudor
 import com.beust.klaxon.Klaxon
 import marudor.departure.DeparturesInfo
 import marudor.station.Station
-import marudor.station.StationType
+import marudor.station.StationDataType
 import java.net.URL
 import java.net.URLEncoder
 
@@ -15,7 +15,7 @@ object MarudorApi : AbstractRestApi(){
 
 
 
-    fun findStation(searchTerm: String, type : StationType = StationType.Default, max:Int = 6): List<Station> {
+    fun searchStations(searchTerm: String, type : StationDataType = StationDataType.Default, max:Int = 6): List<Station> {
         var result = listOf<Station>()
         val baseUrl = V1 + stationEndPoint + URLEncoder.encode(searchTerm, "UTF-8")
         val parameter = "type="+type.code+"&max="+max
