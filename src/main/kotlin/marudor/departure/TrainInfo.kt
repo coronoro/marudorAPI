@@ -6,6 +6,6 @@ data class TrainInfo (
     var number: String,
     var type: String,
     var thirdParty: String? = null,
-    var longDistance: Boolean,
-    var trainCategory: String
+    var longDistance: Boolean? = null,
+    var trainCategory: String? = null
 )
