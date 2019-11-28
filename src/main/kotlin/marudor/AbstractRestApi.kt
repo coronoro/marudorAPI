@@ -14,6 +14,7 @@ abstract class AbstractRestApi {
         println(status)
         try {
             get = clientResource.get()
+            Thread.sleep(3_000)
         }catch (e: Exception){
             throw e
         }
