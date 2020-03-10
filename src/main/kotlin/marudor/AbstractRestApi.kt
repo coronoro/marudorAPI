@@ -6,6 +6,11 @@ import java.net.URL
 
 abstract class AbstractRestApi {
 
+    companion object{
+        var wait:Long  = 3000
+
+    }
+
     protected fun getRepresentation(url: URL): Representation? {
         val get: Representation?
         println("get from: $url")
@@ -14,7 +19,7 @@ abstract class AbstractRestApi {
         println(status)
         try {
             get = clientResource.get()
-            Thread.sleep(3_000)
+            Thread.sleep(wait)
         }catch (e: Exception){
             throw e
         }
