@@ -1,9 +1,9 @@
 package marudor.hafas
 
 data class IRISMessage(
-    var text: String,
-    var timestamp: Int,
-    var superseded: Boolean,
-    var priority: Int
+    var text: String? = null,
+    var timestamp: Int? = null,
+    var superseded: Boolean? = null,
+    var priority: Int? = null
 ) {
 }
