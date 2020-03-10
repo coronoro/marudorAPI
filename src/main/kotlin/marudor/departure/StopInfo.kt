@@ -2,7 +2,7 @@ package marudor.departure
 
 data class StopInfo(
     var scheduledPlatform : String? = null,
-    var platform : String,
+    var platform : String? = null,
     var scheduledTime : Long,
     var time : Long,
     var delay : Int? = null,
