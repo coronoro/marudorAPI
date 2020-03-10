@@ -32,6 +32,10 @@ object MarudorApi : AbstractRestApi(){
         val representation = getRepresentation(url)
 
         if (representation != null){
+            while (!representation.isAvailable){
+                println("waiting for availability ...")
+                Thread.sleep(1_000)
+            }
             val parse = Klaxon().parseArray<Station>(representation.stream)
             if (parse != null){
                 result = parse
@@ -64,6 +68,10 @@ object MarudorApi : AbstractRestApi(){
         val representation = getRepresentation(url)
 
         if (representation != null){
+            while (!representation.isAvailable){
+                println("waiting for availability ...")
+                Thread.sleep(1_000)
+            }
             val parse = Klaxon().parse<TrainDetails>(representation.stream)
             if (parse != null){
                 result = parse
@@ -84,6 +92,10 @@ object MarudorApi : AbstractRestApi(){
         val representation = getRepresentation(url)
 
         if (representation != null){
+            while (!representation.isAvailable){
+                println("waiting for availability ...")
+                Thread.sleep(1_000)
+            }
             val parse = Klaxon().parse<DeparturesInfo>(representation.stream)
             if (parse != null){
                 result = parse
