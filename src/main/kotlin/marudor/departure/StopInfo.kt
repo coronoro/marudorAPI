@@ -11,5 +11,4 @@ data class StopInfo(
     var cancelled : Boolean? = null,
     var wingIds : List<String> = emptyList(),
     var hidden : Boolean? = null
-
 )

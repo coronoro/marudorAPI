@@ -19,7 +19,7 @@ data class Departure(
     var cancelled: Boolean? = null,
     var route : List<RouteInfo>,
     var destination : String,
-    var platform : String,
+    var platform : String? = null,
     var scheduledPlatform: String,
     var auslastung : Boolean? = null,
     var reihung : Boolean,
