@@ -13,7 +13,7 @@ internal class MarudorApiTest {
     fun findStation() {
         val stations = MarudorApi.searchStations("Leipzig HBF")
         stations.forEach { println(it) }
-        assertEquals(1, stations.size)
+        assertEquals(6, stations.size)
     }
 
     @org.junit.jupiter.api.Test
