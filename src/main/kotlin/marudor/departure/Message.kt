@@ -1,11 +1,11 @@
 package marudor.departure
 
 data class Message(
- var type : String,
-var code : String,
-var icoX : Int,
-var txtN : String,
-var txtS : String,
-var prio : Int,
-var sIdx : Int
+ var type : String? = null,
+var code : String? = null,
+var icoX : Int? = null,
+var txtN : String? = null,
+var txtS : String? = null,
+var prio : Int? = null,
+var sIdx : Int? = null
 )

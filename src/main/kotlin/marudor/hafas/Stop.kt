@@ -1,9 +1,9 @@
 package marudor.hafas
 
 import com.beust.klaxon.Json
+import marudor.departure.Message
 import marudor.departure.StopInfo
 import marudor.station.Station
-import org.restlet.Message
 
 data class Stop(
     var arrival: StopInfo? = null,

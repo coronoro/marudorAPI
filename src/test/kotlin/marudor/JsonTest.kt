@@ -5,6 +5,7 @@ import marudor.departure.Departure
 import marudor.departure.DeparturesInfo
 import marudor.departure.StopInfo
 import marudor.departure.TrainInfo
+import marudor.hafas.TrainDetails
 import marudor.station.Station
 import org.junit.jupiter.api.Test
 import java.io.File
@@ -18,6 +19,15 @@ internal class JsonTest {
         val file = File(json.toURI())
         val parse = Klaxon().parseArray<Station>(file)
         parse?.forEach { println(it) }
+
+    }
+
+    @Test
+    fun parseTrainDetailsCheck() {
+        val json = JsonTest::class.java.getResource("/test/trainDetails.json")
+        val file = File(json.toURI())
+        val parse = Klaxon().parse<TrainDetails>(file)
+        println(parse)
 
     }
 

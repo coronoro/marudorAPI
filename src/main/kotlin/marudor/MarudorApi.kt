@@ -72,8 +72,7 @@ object MarudorApi : AbstractRestApi(){
                 println("waiting for availability ...")
                 Thread.sleep(1_000)
             }
-            val text = representation.text
-            val parse = Klaxon().parse<TrainDetails>(text)
+            val parse = Klaxon().parse<TrainDetails>(representation.stream)
             if (parse != null){
                 result = parse
             }
@@ -97,8 +96,7 @@ object MarudorApi : AbstractRestApi(){
                 println("waiting for availability ...")
                 Thread.sleep(1_000)
             }
-            val text = representation.text
-            val parse = Klaxon().parse<DeparturesInfo>(text)
+            val parse = Klaxon().parse<DeparturesInfo>(representation.stream)
             if (parse != null){
                 result = parse
             }
