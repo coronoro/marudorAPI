@@ -3,6 +3,7 @@ package marudor
 import org.restlet.representation.Representation
 import org.restlet.resource.ClientResource
 import java.net.URL
+import java.util.logging.Logger
 
 abstract class AbstractRestApi {
 
@@ -13,10 +14,10 @@ abstract class AbstractRestApi {
 
     protected fun getRepresentation(url: URL): Representation? {
         val get: Representation?
-        println("get from: $url")
+        val logger = Logger.getLogger("marudorAPI")
+        logger.info("get from: $url")
         val clientResource = ClientResource(url.toURI())
         val status = clientResource.status
-        println(status)
         try {
             get = clientResource.get()
             Thread.sleep(wait)
