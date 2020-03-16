@@ -35,6 +35,13 @@ internal class MarudorApiTest {
     }
 
     @org.junit.jupiter.api.Test
+    fun getWagonSequence() {
+        val departure = MarudorApi.getWagonSequence("2445","1584354600000")
+        println(departure)
+        assertNotNull(departure)
+    }
+
+    @org.junit.jupiter.api.Test
     fun getTrainDetails() {
         val trainDetails = MarudorApi.getTrainDetails("ICE 693")
         println(trainDetails)

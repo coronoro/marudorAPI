@@ -8,6 +8,7 @@ import marudor.hafas.TrainDetails
 import marudor.station.Station
 import marudor.station.StationDataType
 import marudor.util.PercentEncoder
+import marudor.wagonSequence.WagonSequence
 import java.net.URL
 import java.net.URLEncoder
 import java.util.*
@@ -23,6 +24,24 @@ object MarudorApi : AbstractRestApi(){
 
     private const val trainDetailsURL = "hafas/v1/details/"
 
+    fun getWagonSequence(trainNumber: String, date:String): WagonSequence?{
+        var result:WagonSequence? = null
+        val baseUrl = base + wagonOrderURL + PercentEncoder.encode(trainNumber) +"/"+ PercentEncoder.encode(date)
+        val url = URL(baseUrl)
+        val representation = getRepresentation(url)
+
+        if (representation != null){
+            while (!representation.isAvailable){
+                println("waiting for availability ...")
+                Thread.sleep(1_000)
+            }
+            val parse = Klaxon().parse<WagonSequence>(representation.stream)
+            if (parse != null){
+                result = parse
+            }
+        }
+        return result
+    }
 
     fun searchStations(searchTerm: String, type : StationDataType = StationDataType.Default, max:Int = 6): List<Station> {
         var result = listOf<Station>()
