@@ -1,4 +1,6 @@
 package marudor.wagonSequence
 
-class VehicleGroup {
+data class VehicleGroup(
+    val allFahrzeug: List<Vehicle> = emptyList<Vehicle>()
+) {
 }

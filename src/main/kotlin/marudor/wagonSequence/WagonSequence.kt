@@ -4,7 +4,6 @@ import com.beust.klaxon.Json
 
 data class WagonSequence (
     var fahrtrichtung: String? = null,
-    @Json(ignored = true)
     val allFahrzeuggruppe: List<VehicleGroup> = emptyList(),
     val halt: Stop,
     val liniebezeichnung: String,
