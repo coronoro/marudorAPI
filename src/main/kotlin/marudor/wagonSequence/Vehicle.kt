@@ -5,7 +5,7 @@ data class Vehicle(
     val kategorie : String? = null,
     val fahrzeugnummer :String,
     val orientierung:String,
-    val positioningruppe :Int,
+    val positioningruppe :String,
     val fahrzeugsektor: String,
     val fahrzeugtyp : String,
     val wagenordnungsnummer : String,
