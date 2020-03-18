@@ -10,7 +10,7 @@ data class TrainDetails(
     var cancelled: Boolean? = null,
     var changeDuration: Int? = null,
     var duration: Int? = null,
-    var finalDestination: String,
+    var finalDestination: String? = null,
     var jid: String,
     var product: Product? = null,
     var raw: String? = null,
